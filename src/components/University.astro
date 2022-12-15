@@ -3,7 +3,7 @@ const universities = ["radiologia", "silan", "uba", "uninorte", "neurocirugia"];
 ---
 
 <section
-    class="wrapped flex justify-between items-center gap-x-6 flex-nowrap overflow-hidden bg-white border-t border-b border-slate-100 px-12 py-10"
+    class="wrapped flex justify-between items-center gap-x-6 flex-nowrap bg-white border-t border-b border-slate-100 px-12 py-10 overflow-x-auto overflow-visible sm:overflow-hidden"
 >
     {
         universities.map((univertity) => (
@@ -11,7 +11,7 @@ const universities = ["radiologia", "silan", "uba", "uninorte", "neurocirugia"];
                 src={`/photos/estudios-drjairo/${univertity}.png`}
                 loading="lazy"
                 alt={univertity}
-                class="w-1/6"
+                class="w-1/2 sm:w-1/6"
             />
         ))
     }

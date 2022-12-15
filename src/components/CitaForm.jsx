@@ -6,9 +6,9 @@ export function CitaForm(){
     
     return (
         <div
-        className="relative -top-24 wrapper bg-white border border-slate-300 shadow-lg hover:shadow-blue-300/20 py-16 px-20 rounded-lg"
+        className="relative -top-24 wrapper bg-white border border-slate-300 shadow-lg hover:shadow-blue-300/20 py-5 px-6 sm:py-16 sm:px-20 rounded-lg"
     >
-        <h1 className="text-4xl w-1/2 font-semibold text-slate-800">
+        <h1 className="text-xl sm:text-3xl md:text-4xl w-5/6 sm:w-3/4 md:w-1/2 font-semibold text-slate-800">
             Déjenos sus datos y nos pondremos en contacto con Usted
         </h1>
         <h3 className="text-slate-500 font-light mt-1">
@@ -16,7 +16,7 @@ export function CitaForm(){
         </h3>
         <fieldset disabled={isSubmitting}>
         <form className="mt-8 flex flex-col gap-y-5 font-light" onSubmit={handleSubmit(onSubmit)}>
-            <div className="flex gap-x-6 justify-between">
+            <div className="flex flex-col gap-y-6 sm:flex-row sm:gap-x-6 justify-between">
                 <label className="flex flex-col w-full">
                     Nombre Completo
                     <input
@@ -40,7 +40,7 @@ export function CitaForm(){
                     {errors.asunto && <span className="text-red-500 text-sm">Este campo es requerido.</span>}
                 </label>
             </div>
-            <div className="flex gap-x-6 justify-between">
+            <div className="flex flex-col gap-y-6 sm:flex-row sm:gap-x-6 justify-between">
                 <label className="flex flex-col w-full">
                     Telefóno ó celular de contacto
                     <input
