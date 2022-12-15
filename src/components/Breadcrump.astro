@@ -1,0 +1,17 @@
+---
+export interface Props {
+    title: string;
+    body: string;
+}
+
+const { title, body } = Astro.props;
+---
+
+<section
+    class="text-white bg-[url('/background/citas.webp')] py-12 bg-cover bg-no-repeat bg-center"
+>
+    <div class="wrapper">
+        <h2 class="text-3xl font-semibold uppercase">{title}</h2>
+        <h4 class="text-sm font-light">{body}</h4>
+    </div>
+</section>

@@ -1,0 +1,59 @@
+---
+import Breadcrump from "../components/Breadcrump.astro";
+import CTA from "../components/CTA.astro";
+import Testimonial from "../components/Testimonial.astro";
+import University from "../components/University.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+    title="Unesi :: UNIDAD DE NEUROCIRUGIA ENDOVASCULAR STROKE E INTERVENCIONISMO S.A.S. "
+>
+    <main>
+        <Breadcrump title="Nuestro Equipo" body="Inicio -  Nuestro Equipo" />
+        <section class="flex gap-x-28 py-20 wrapper">
+            <div class="w-1/2">
+                <img
+                    src="photos/jairofernandez.jpg"
+                    alt=""
+                    class="rounded-lg object-cover h-full"
+                />
+            </div>
+            <div class="w-1/2 py-10">
+                <header class="mb-6">
+                    <h4 class="subtitle">Neurocirugano Endovascular</h4>
+                    <h2 class="title">Dr. Jairo Martin Fernandez Henríquez</h2>
+                </header>
+                <p>
+                    Médico Cirujano por la Universidad Libre de Barranquilla y
+                    especialista en Neurocirugía con Título Otorgado de la
+                    Universidad de Buenos Aires (Homologación Colombiana de
+                    Título Extranjero ante el Ministerio de Educación Nacional).
+                </p>
+                <p>
+                    Complementó sus estudios con entrenamientos especiales y la
+                    subespecialidad en Neurocirugia Endovascular y
+                    Neurointervenvionismo en el Instituto E.N.E.R.I. Y SILAN en
+                    Bs As. Conferencista desde 2005 en múltiples simposios
+                    nacionales e internacionales. Miembro activo de la Sociedad
+                    Colombiana de Neurocirugía, la Sociedad Colombiana de
+                    Radiología, del Comité Académico del Grupo Colombiano de
+                    Neurointervenvionismo, de SILAN, Presidente Capítulo
+                    Atlántico, Proctor Sip Internacional y Director científico
+                    de la Red Stroke del distrito de Barranquilla.
+                </p>
+                <p>
+                    Cuenta con una amplia experiencia y trayectoria de alrededor
+                    de 20 años en esta subespecialidad con más de 7.000
+                    tratamientos endovasculares realizadados en el área de
+                    HEMODINAMIA en diversas instituciones de prestigio en las
+                    ciudades de Barranquilla, Santa Martha y Valledupar, entre
+                    otras.
+                </p>
+            </div>
+        </section>
+        <University />
+        <Testimonial />
+        <CTA />
+    </main>
+</Layout>

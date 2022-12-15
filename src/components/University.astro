@@ -1,0 +1,18 @@
+---
+const universities = ["radiologia", "silan", "uba", "uninorte", "neurocirugia"];
+---
+
+<section
+    class="wrapped flex justify-between items-center gap-x-6 flex-nowrap overflow-hidden bg-white border-t border-b border-slate-100 px-12 py-10"
+>
+    {
+        universities.map((univertity) => (
+            <img
+                src={`/photos/estudios-drjairo/${univertity}.png`}
+                loading="lazy"
+                alt={univertity}
+                class="w-1/6"
+            />
+        ))
+    }
+</section>
