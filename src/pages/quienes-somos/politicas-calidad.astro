@@ -1,0 +1,89 @@
+---
+import Breadcrump from "../../components/Breadcrump.astro";
+import CTA from "../../components/CTA.astro";
+import LayoutAbout from "../../layouts/LayoutAbout.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout
+    title="Unesi :: UNIDAD DE NEUROCIRUGIA ENDOVASCULAR STROKE E INTERVENCIONISMO S.A.S. "
+>
+    <main>
+        <Breadcrump
+            title="Política de Calidad"
+            body="Inicio - Quienes Somos - Política de Calidad"
+        />
+        <LayoutAbout>
+            <div class="w-4/5">
+                <div>
+                    <h2 class="title mb-3">Políticas de Calidad</h2>
+                    <p>
+                        Nuestro grupo de profesionales brinda atención médica
+                        especializada por medio de procedimientos de
+                        neurocirugia y neurocirugia intervencionista,
+                        encaminados hacia el bienestar y satisfacción de los
+                        pacientes que acuden a las instituciones prestadoras de
+                        salud con las cuales tenemos convenio de servicio y a
+                        los pacientes que llegan a nuestro consultorio,
+                        respaldados en la trayectoria y experiencia de nuestros
+                        médicos, quienes cuentan con excelente reconocimiento y
+                        confianza en el mundo, gracias a la certificación
+                        nacional e internacional de los estudios realizados
+                        plenamente corroborables.
+                    </p>
+                </div>
+                <div class="flex gap-x-10 mt-16">
+                    <div class="w-2/3 flex flex-col gap-y-10">
+                        <div>
+                            <h2 class="subtitle uppercase mb-3">
+                                Políticas de seguridad del paciente
+                            </h2>
+                            <p>
+                                Brindar a nuestros usuarios un entorno seguro
+                                con profesionales íntegros y certificados, que
+                                además cumplan a cabalidad con nuestros valores
+                                corporativos
+                            </p>
+                        </div>
+                        <div>
+                            <h2 class="subtitle uppercase mb-3">
+                                Políticas de humanización de la atención
+                            </h2>
+                            <p>
+                                UNESI LTDA, se compromete a brindar una atención
+                                integral del servicio al usuario y a su familia,
+                                cumpliendo con las expectativas y necesidades
+                                del paciente, logrando satisfacción en los
+                                servicios recibidos, ofreciendo una calidad
+                                humana por parte de nuestro personal de salud;
+                                basándonos en un trato amable, personalizado,
+                                respetuoso y haciendo cumplir sus derechos y
+                                deberes.
+                            </p>
+                        </div>
+                        <div>
+                            <h2 class="subtitle uppercase mb-3">
+                                Políticas de seguridad de la información
+                            </h2>
+                            <p>
+                                Garantizar el cumplimiento normativo que regula
+                                la gestión de información, actuando con
+                                transparencia y confidencialidad, siendo claros
+                                y oportunos en el manejo de la historia clínica.
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <img
+                            src="/photos/about/seguridad-del-paciente.webp"
+                            alt="seguridad-del-paciente"
+                            loading="lazy"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                </div>
+            </div>
+        </LayoutAbout>
+        <CTA />
+    </main>
+</Layout>
