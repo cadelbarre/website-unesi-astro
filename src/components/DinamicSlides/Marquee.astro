@@ -1,0 +1,58 @@
+---
+interface MarqueProps {
+  items: string[];
+}
+
+const { items } = Astro.props as MarqueProps;
+---
+
+<div class="marquee">
+  <ul class="marquee__content">
+    {
+      items?.map((univertity) => (
+        <li>
+          <img
+            src={`/photos/estudios-drjairo/${univertity}.png`}
+            alt={univertity}
+            class="max-h-12 md:max-h-20 lg:max-h-28 "
+            loading="lazy"
+          />
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style>
+  .marquee {
+    --gap: 4rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+  }
+
+  .marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: var(--gap);
+    min-width: 100%;
+    animation: scroll 40s linear infinite;
+  }
+
+  .marquee--reverse .marquee__content {
+    animation-direction: reverse;
+    animation-delay: -3s;
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+</style>
