@@ -7,18 +7,18 @@ export default function Navbar() {
 
   return (
     <nav
-    className="py-4 md:py-8 bg-white shadow-lg shadow-slate-200/40"
+    className="py-3 md:py-4 bg-white shadow-lg shadow-slate-200/40"
     role="navigation"
     aria-label="main navigation"
 >
     <div className="wrapper flex justify-between items-center px-6 lg:px-0">
         <a href="/">
-            <img src="/photos/logos/unesilogo.png" className="h-10 md:h-11" />
+            <img src="/photos/logos/unesilogo.png" className="h-12 md:h-16" />
         </a>
 
-        <div className="burger md:hidden" onClick={() => setShow(prev => !prev)}>
+        <div className="burger lg:hidden" onClick={() => setShow(prev => !prev)}>
             <button
-                className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 outline-none ring-2 ring-gray-200"
+                className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 outline-none ring-2 ring-gray-200"
             >
                 <svg
                     className="w-6 h-6"
@@ -35,7 +35,7 @@ export default function Navbar() {
         </div>
       
         <div
-            className={`md:relative md:block z-20 rounded-b-lg bg-white p-10 shadow-lg md:shadow-none md:bg-transparent md:p-0 ${show ? 'right-0 top-16 w-3/4 absolute': 'hidden'}`} id='nav-burger'
+            className={`lg:relative lg:block z-20 rounded-b-lg bg-white p-10 shadow-lg md:shadow-none md:bg-transparent md:p-0 ${show ? 'right-0 top-16 w-3/4 absolute': 'hidden'}`} id='nav-burger'
         >
             <ul
                 className="flex flex-col md:flex-row items-start md:items-center gap-y-6 md:gap-x-8 text-slate-600 font-light hover:[&>a]:text-[#03588C]"
