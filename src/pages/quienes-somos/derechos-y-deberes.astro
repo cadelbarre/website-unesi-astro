@@ -1,0 +1,31 @@
+---
+import Breadcrump from "../../components/Breadcrump.astro";
+import CTA from "../../components/CTA.astro";
+import LayoutAbout from "../../layouts/LayoutAbout.astro";
+import Layout from "../../layouts/Layout.astro";
+import Derechos from "../../components/Derechos-Deberes/Derechos.astro";
+import Deberes from "../../components/Derechos-Deberes/Deberes.astro";
+---
+
+<Layout
+    title="Unesi :: UNIDAD DE NEUROCIRUGIA ENDOVASCULAR STROKE E INTERVENCIONISMO S.A.S. "
+>
+    <main>
+        <Breadcrump
+            title="Derechos y Deberes"
+            body="Inicio - Quienes Somos - Derechos y Deberes"
+        />
+        <LayoutAbout>
+            <div class="w-full md:w-4/5 flex flex-col gap-y-8">
+                <img
+                    src="/photos/about/derechos-y-deberes.webp"
+                    alt="mision vision image"
+                    loading="lazy"
+                />
+                <Derechos />
+                <Deberes />
+            </div>
+        </LayoutAbout>
+        <CTA />
+    </main>
+</Layout>
