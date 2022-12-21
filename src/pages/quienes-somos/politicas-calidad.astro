@@ -14,7 +14,7 @@ import Layout from "../../layouts/Layout.astro";
             body="Inicio - Quienes Somos - Política de Calidad"
         />
         <LayoutAbout>
-            <div class="w-4/5">
+            <div class="w-full md:w-4/5">
                 <div>
                     <h2 class="title mb-3">Políticas de Calidad</h2>
                     <p>
@@ -32,8 +32,8 @@ import Layout from "../../layouts/Layout.astro";
                         plenamente corroborables.
                     </p>
                 </div>
-                <div class="flex gap-x-10 mt-16">
-                    <div class="w-2/3 flex flex-col gap-y-10">
+                <div class="flex flex-col-reverse md:flex-row gap-x-10 mt-16">
+                    <div class="w-full md:w-2/3 flex flex-col gap-y-10">
                         <div>
                             <h2 class="subtitle uppercase mb-3">
                                 Políticas de seguridad del paciente
@@ -73,13 +73,55 @@ import Layout from "../../layouts/Layout.astro";
                             </p>
                         </div>
                     </div>
-                    <div>
+                    <div class="mb-6 md:mb-0">
                         <img
                             src="/photos/about/seguridad-del-paciente.webp"
                             alt="seguridad-del-paciente"
                             loading="lazy"
                             class="w-full h-full object-cover"
                         />
+                    </div>
+                </div>
+                <div class="flex flex-col-reverse md:flex-row gap-x-10 mt-16">
+                    <div class="mb-6 md:mb-0">
+                        <img
+                            src="/photos/about/seguridad-del-paciente.webp"
+                            alt="seguridad-del-paciente"
+                            loading="lazy"
+                            class="w-full h-full object-cover"
+                        />
+                    </div>
+                    <div class="w-full md:w-2/3 flex flex-col gap-y-10">
+                        <div>
+                            <h2 class="subtitle uppercase mb-3">
+                                Políticas de Gestión Ambiental
+                            </h2>
+                            <p>
+                                UNESI LTDA consciente de los impactos
+                                ambientales generados durante el desarrollo de
+                                las actividades de prestación de servicios de
+                                salud, se compromete a implementar medidas con
+                                el fin de contribuir a la protección de los
+                                recursos naturales en su gestión administrativa,
+                                a destinar todos los recursos necesarios para
+                                promover y mantener estrategias encaminadas al
+                                mejoramiento continuo de la gestión ambiental
+                                incentivando el desarrollo sostenible,
+                                cumpliendo con los requisitos legales y
+                                reglamentos vigentes.
+                            </p>
+                        </div>
+                        <div>
+                            <h2 class="subtitle uppercase mb-3">
+                                POLÍTICA DE SEGURIDAD DE LA INFORMACIÓN
+                            </h2>
+                            <p>
+                                Garantizar el cumplimiento normativo que regula
+                                la gestión de información, actuando con
+                                transparencia y confidencialidad, siendo claros
+                                y oportunos en el manejo de la historia clínica.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
